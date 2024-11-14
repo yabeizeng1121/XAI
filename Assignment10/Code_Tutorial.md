@@ -70,10 +70,16 @@ shap.plots.text(shap_values[3])
 
 ### Visualization of SHAP Values
 
+![SHAP Output](https://raw.githubusercontent.com/yabeizeng1121/XAI/main/Assignment10/plot.png "SHAP Text Plot Visualization")
+
+
 The SHAP text plot visualizes how individual words in a text influence a model's prediction. Words that impact the prediction positively are shown in red, while those with a negative impact are shown in blue. For instance, positive words like "lovable", "impressive", and "still" enhance the sentiment towards favorable, whereas negative words like "not" can diminish the effect of nearby positive words.
 
 This plot also shows a base value, which is the model’s average output over a background dataset, and illustrates how each word's contribution shifts the prediction from this baseline to the final output. The color intensity and the length of each block around the words reflect the magnitude of their impact, providing a clear visual representation of their significance in the decision-making process of the model.
 
-![SHAP Output]( "SHAP Text Plot Visualization")
+
+## Conclusion
+
+Throughout this tutorial, we've utilized SHAP, a powerful tool within the field of Explainable AI (XAI), to demystify the inner workings of the DistilBERT model. By applying XAI principles, we provided a window into how individual words influence the sentiment predictions in text data. This visibility is crucial in fields requiring transparency and accountability, allowing stakeholders to trust and validate AI decisions. Moreover, the insights gained through such explanations not only foster ethical AI deployment but also support the refinement and understanding of AI models, making them more accessible and interpretable to a broader audience.
 
 
